@@ -1,0 +1,78 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+#game{
+    width: 500px;
+    height: 500px;
+    border: 1px solid black;
+    box-sizing: border-box;
+    background-image: url('bg2.jpg');
+    background-size: cover;
+}
+#character{
+    width: 100px;
+    height: 100px;
+    position: relative;
+    top: 400px;
+    left: 200px;
+}
+
+#block{
+    width: 100px;
+    height: 100px;
+    top: 500px;
+    position: relative;
+    animation: slide 3s infinite;
+}
+@keyframes slide {
+    0%{top: -100px;}
+    100%{top: 500px;}
+}
+.enemy{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    animation: glide 10s infinite ;
+    background-image: url('enemy.png');
+    background-size:cover ;
+
+}
+#score
+{
+    position: absolute;
+    color: white;
+    top: 0px;
+    left: 0px;
+
+}
+.bullet{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    animation: fire 0.1s ;
+    background-image: url('bullet.png');
+    background-size:cover ;
+}
+@keyframes fire {
+    0%{top: 300px;}
+    100%{top: -100px;}
+
+}
+
+@keyframes glide {
+
+    50%{left: 400px;}
+    100%{left: 0px;}
+}
+#white{
+    width: 500px;
+    height: 500px;
+    background-color: white;
+    position: absolute;
+    top: 500px;
+}
+
+
+
+
