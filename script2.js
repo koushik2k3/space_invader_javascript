@@ -5,6 +5,7 @@ function moveleft(){
     character.style.left=left+"px";
     }
 }
+
 function moveright(){
     var left= parseInt(window.getComputedStyle(character).getPropertyValue("left"));
     left+=100;
